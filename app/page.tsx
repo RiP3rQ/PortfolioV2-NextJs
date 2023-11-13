@@ -8,12 +8,13 @@ import Path from "@/components/path";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
 import { ArrowLongUpIcon } from "@heroicons/react/24/outline";
+import { ModeToggle } from "@/components/themeToogle";
 
 export default function Home() {
   return (
     <main
-      className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll 
-    z-0 overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"
+      className="dark:bg-[rgb(36,36,36)] dark:text-white bg-slate-200 text-gray-700  h-screen snap-y snap-mandatory overflow-scroll 
+    z-0 overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 relative"
     >
       {/* HEADER */}
       <Header />
@@ -54,6 +55,10 @@ export default function Home() {
           </div>
         </footer>
       </Link>
+
+      <div className="fixed bottom-4 right-6 z-50">
+        <ModeToggle />
+      </div>
     </main>
   );
 }

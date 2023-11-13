@@ -103,21 +103,3 @@ export const paths = [
     endingDate: "2021-07-01",
   },
 ];
-
-export const skills = [
-  {
-    id: "1",
-    title: "React",
-    image: "/images/hero.png",
-  },
-  {
-    id: "2",
-    title: "Next.js",
-    image: "/images/hero.png",
-  },
-  {
-    id: "3",
-    title: "TypeScript",
-    image: "/images/hero.png",
-  },
-];

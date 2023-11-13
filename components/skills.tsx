@@ -1,7 +1,35 @@
-import React from "react";
+"use client";
+
+import { motion } from "framer-motion";
+import SkillItem from "./skillItem";
+import { technologies } from "@/lib/data";
 
 const Skills = () => {
-  return <div>Skills</div>;
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="min-h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-[2000px] xl:px-10 
+    justify-center mx-auto items-center xl:space-y-0"
+    >
+      <h3 className="absolute top-12 uppercase tracking-[20px] text-gray-500 text-2xl">
+        Umiejętności
+      </h3>
+
+      <h4 className="absolute top-24 uppercase tracking-[3px] text-gray-500 text-sm">
+        Umiejętności, których nauczyłem się podczas mojej podróży jako
+        programista
+      </h4>
+
+      {/* Render Skills Learned */}
+      <div className="grid grid-cols-4 gap-5 mt-10">
+        {technologies?.map((skill) => (
+          <SkillItem key={skill?.id} skill={skill} />
+        ))}
+      </div>
+    </motion.div>
+  );
 };
 
 export default Skills;

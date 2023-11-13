@@ -32,3 +32,92 @@ export const aboutData = {
     ciągłe dążenie do samodoskonalenia będą stanowić wartość dodaną dla każdego zespołu.`,
   profilePic: "/images/hero.png",
 };
+
+export const technologies = [
+  {
+    id: "1",
+    title: "React",
+    image: "/images/hero.png",
+  },
+  {
+    id: "2",
+    title: "Next.js",
+    image: "/images/hero.png",
+  },
+  {
+    id: "3",
+    title: "TypeScript",
+    image: "/images/hero.png",
+  },
+];
+
+export const paths = [
+  {
+    id: "1",
+    name: "Portfolio",
+    image: "/images/hero.png",
+    description: "Opis",
+    technologies: [
+      {
+        id: "1",
+        title: "React",
+        image: "/images/hero.png",
+      },
+      {
+        id: "2",
+        title: "Next.js",
+        image: "/images/hero.png",
+      },
+      {
+        id: "3",
+        title: "TypeScript",
+        image: "/images/hero.png",
+      },
+    ],
+    startingDate: "2021-07-01",
+    endingDate: "2021-07-01",
+  },
+  {
+    id: "2",
+    name: "Portfolio",
+    image: "/images/hero.png",
+    description: "Opis",
+    technologies: [
+      {
+        id: "1",
+        title: "React",
+        image: "/images/hero.png",
+      },
+      {
+        id: "2",
+        title: "Next.js",
+        image: "/images/hero.png",
+      },
+      {
+        id: "3",
+        title: "TypeScript",
+        image: "/images/hero.png",
+      },
+    ],
+    startingDate: "2021-07-01",
+    endingDate: "2021-07-01",
+  },
+];
+
+export const skills = [
+  {
+    id: "1",
+    title: "React",
+    image: "/images/hero.png",
+  },
+  {
+    id: "2",
+    title: "Next.js",
+    image: "/images/hero.png",
+  },
+  {
+    id: "3",
+    title: "TypeScript",
+    image: "/images/hero.png",
+  },
+];

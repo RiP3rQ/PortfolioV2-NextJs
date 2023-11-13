@@ -8,8 +8,6 @@ import { socials } from "@/lib/data";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 
 const Header = () => {
-  console.log(socials);
-
   return (
     <header
       className="sticky top-0 p-5 flex items-start justify-between 

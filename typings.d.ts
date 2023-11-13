@@ -1,3 +1,9 @@
+export interface Technologies {
+  id: string;
+  title: string;
+  image: Image;
+}
+
 export interface Paths {
   id: string;
   name: string;
@@ -8,8 +14,12 @@ export interface Paths {
   endingDate: date;
 }
 
-export interface Technologies {
+export interface Projects extends SanityBody {
   id: string;
-  title: string;
+  name: string;
   image: Image;
+  linkToGithub: string;
+  summary: string;
+  technologies: Technologies[];
+  category: string;
 }

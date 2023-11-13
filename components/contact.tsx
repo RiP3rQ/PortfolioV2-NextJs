@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import { FaPaperPlane } from "react-icons/fa";
 import { toast, Toaster } from "react-hot-toast";
 
 import * as z from "zod";
@@ -23,6 +24,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { sendEmail } from "@/actions/sendEmail";
 
 type Inputs = {
   name: string;
@@ -32,12 +34,6 @@ type Inputs = {
 };
 
 const formSchema = z.object({
-  name: z
-    .string()
-    .min(2, {
-      message: "Twoje imie musi mieć conajmniej 2 znaki.",
-    })
-    .max(50),
   email: z.string().email({
     message: "Podaj poprawny adres email.",
   }),
@@ -59,17 +55,32 @@ const Contact = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "",
       email: "",
       title: "",
       message: "",
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const notification = toast.loading("Wysyłam wiadomość...");
+
+    const { data, error } = await sendEmail({
+      email: values.email,
+      title: values.title,
+      message: values.message,
+    });
+
+    if (error) {
+      toast.error("Coś poszło nie tak. Spróbuj ponownie później.", {
+        id: notification,
+      });
+      return;
+    }
+
+    toast.success("Wiadomość wysłana pomyślnie!", {
+      id: notification,
+    });
+    form.reset();
   }
 
   // const onSubmit: SubmitHandler<Inputs> = async (formData) => {
@@ -143,19 +154,19 @@ const Contact = () => {
             <div className="flex space-x-2">
               <FormField
                 control={form.control}
-                name="name"
+                name="title"
                 render={({ field }) => (
                   <FormItem className="flex-1">
-                    <FormLabel>Imię:</FormLabel>
+                    <FormLabel>Tytuł:</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="essik"
+                        placeholder="tytuł"
                         {...field}
-                        className="contactInput "
+                        className="contactInput"
                       />
                     </FormControl>
                     <FormDescription>
-                      This is your public display name.
+                      This is title of your email.
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -186,27 +197,6 @@ const Contact = () => {
 
             <FormField
               control={form.control}
-              name="title"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Tytuł:</FormLabel>
-                  <FormControl>
-                    <Input
-                      placeholder="tytuł"
-                      {...field}
-                      className="contactInput"
-                    />
-                  </FormControl>
-                  <FormDescription>
-                    This is title of your email.
-                  </FormDescription>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
               name="message"
               render={({ field }) => (
                 <FormItem>
@@ -227,7 +217,8 @@ const Contact = () => {
               type="submit"
               className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
             >
-              Wyślij
+              Wyślij{" "}
+              <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
             </Button>
           </form>
         </Form>

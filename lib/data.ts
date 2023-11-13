@@ -181,3 +181,8 @@ export const projects = [
     category: "Web",
   },
 ];
+
+export const contactData = {
+  address: "ul. Klonowa 1, 00-000 Warszawa",
+  email: "random@email.com",
+};

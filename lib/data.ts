@@ -35,17 +35,14 @@ export const aboutData = {
 
 export const technologies = [
   {
-    id: "1",
     title: "React",
     image: "/images/hero.png",
   },
   {
-    id: "2",
     title: "Next.js",
     image: "/images/hero.png",
   },
   {
-    id: "3",
     title: "TypeScript",
     image: "/images/hero.png",
   },
@@ -53,23 +50,20 @@ export const technologies = [
 
 export const paths = [
   {
-    id: "1",
-    name: "Portfolio",
-    image: "/images/hero.png",
+    title: "Portfolio",
+    date: "2022",
     description: "Opis",
+    image: "/images/hero.png",
     technologies: [
       {
-        id: "1",
         title: "React",
         image: "/images/hero.png",
       },
       {
-        id: "2",
         title: "Next.js",
         image: "/images/hero.png",
       },
       {
-        id: "3",
         title: "TypeScript",
         image: "/images/hero.png",
       },
@@ -78,23 +72,20 @@ export const paths = [
     endingDate: "2021-07-01",
   },
   {
-    id: "2",
-    name: "Portfolio",
-    image: "/images/hero.png",
+    title: "Portfolio",
+    date: "2022",
     description: "Opis",
+    image: "/images/hero.png",
     technologies: [
       {
-        id: "1",
         title: "React",
         image: "/images/hero.png",
       },
       {
-        id: "2",
         title: "Next.js",
         image: "/images/hero.png",
       },
       {
-        id: "3",
         title: "TypeScript",
         image: "/images/hero.png",
       },
@@ -183,6 +174,6 @@ export const projects = [
 ];
 
 export const contactData = {
-  address: "ul. Klonowa 1, 00-000 Warszawa",
-  email: "random@email.com",
+  address: "Polska, Rybnik",
+  email: "rafalpompa2000@gmail.com",
 };

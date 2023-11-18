@@ -83,35 +83,6 @@ const Contact = () => {
     form.reset();
   }
 
-  // const onSubmit: SubmitHandler<Inputs> = async (formData) => {
-  //   if (errors.name || errors.email || errors.title || errors.message) {
-  //     toast.error("Please fill all fields");
-  //     return;
-  //   }
-
-  //   const notification = toast.loading("Sending message...");
-  //   fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/mail`, {
-  //     method: "POST",
-  //     body: JSON.stringify(formData),
-  //   })
-  //     .then((res) => {
-  //       if (!res.ok) {
-  //         toast.dismiss(notification);
-  //         toast.error("Something went wrong. Please try again later.");
-  //         return;
-  //       }
-  //       reset();
-  //       toast.dismiss(notification);
-  //       toast.success("Message sent successfully!");
-  //       return;
-  //     })
-  //     .catch((err) => {
-  //       toast.dismiss(notification);
-  //       toast.error("Something went wrong. Please try again later.");
-  //       return;
-  //     });
-  // };
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -121,7 +92,7 @@ const Contact = () => {
     justify-evenly mx-auto items-center"
     >
       <Toaster position="top-center" />
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-5xl">
         Kontakt
       </h3>
 
@@ -160,13 +131,14 @@ const Contact = () => {
                     <FormLabel>Tytuł:</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="tytuł"
+                        placeholder="Tytuł wiadomości"
                         {...field}
                         className="contactInput"
                       />
                     </FormControl>
                     <FormDescription>
-                      This is title of your email.
+                      To jest Tytuł twojej wiadomości, która wyświetli się w
+                      emailu.
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -187,7 +159,7 @@ const Contact = () => {
                       />
                     </FormControl>
                     <FormDescription>
-                      This is your email address.
+                      To jest twój adres email, na który się odezwę.
                     </FormDescription>
                     <FormMessage />
                   </FormItem>
@@ -203,22 +175,28 @@ const Contact = () => {
                   <FormLabel>Email:</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="message"
+                      placeholder="Treść wiadomości"
                       {...field}
                       className="contactInput"
                     />
                   </FormControl>
-                  <FormDescription>This is your email address.</FormDescription>
+                  <FormDescription>
+                    To jest treść twojej wiadomości.
+                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <Button
               type="submit"
-              className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+              className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg w-full hover:text-[#F7AB0A] transition-all group-hover:translate-x-1 group-hover:-translate-y-1"
             >
-              Wyślij{" "}
-              <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
+              <div className="flex items-center justify-center space-x-4">
+                <div>Wyślij</div>
+                <div>
+                  <FaPaperPlane className="text-base opacity-70 " />
+                </div>
+              </div>
             </Button>
           </form>
         </Form>

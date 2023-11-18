@@ -26,7 +26,7 @@ const Hero = () => {
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px] ">
+        <h2 className="text-sm uppercase pb-2 tracking-[10px] text-gray-500">
           {heroData.role}
         </h2>
         <h1 className="text-2xl md:text-4xl xl:text-6xl font-semibold px-10">

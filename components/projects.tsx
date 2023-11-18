@@ -34,7 +34,7 @@ const Projects = () => {
       transition={{ duration: 1.5 }}
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-16 md:top-10 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-16 md:top-10 uppercase tracking-[10px] text-gray-500 text-5xl">
         Projekty
       </h3>
 
@@ -57,8 +57,8 @@ const Projects = () => {
         className="absolute top-36 bottom-20 flex w-full overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
       scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 text-center"
       >
-        {projects?.map((project: Projects) => (
-          <ProjectCard key={project.id} project={project} />
+        {projects?.map((project: Projects, index) => (
+          <ProjectCard key={index} project={project} />
         ))}
       </div>
 

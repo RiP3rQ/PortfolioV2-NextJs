@@ -15,7 +15,7 @@ const HeroBackgroundCircles = (props: Props) => {
       transition={{
         duration: 2.5,
       }}
-      className="relative flex justify-center items-center"
+      className="relative flex justify-center items-center bg-transparent"
     >
       <div className="absolute border border-[#fefafd] rounded-full h-[200px] w-[200px] mt-52 animate-ping" />
       <div className="absolute border border-[#fefafd] rounded-full h-[300px] w-[300px] mt-52 animate-ping" />

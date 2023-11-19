@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import HeroBackgroundCircles from "@/components/heroBackgroundCircles";
@@ -16,6 +15,13 @@ const Hero = () => {
     loop: true,
     delaySpeed: 20,
   });
+
+  const navigate = (id: string) => () => {
+    const el = document.querySelector(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="h-screen flex flex-col space-y-2 items-center justify-center text-center overflow-hidden">
@@ -35,18 +41,18 @@ const Hero = () => {
         </h1>
 
         <div className="pt-5">
-          <Link href="#about">
-            <button className="heroButton">O mnie</button>
-          </Link>
-          <a href="#path">
-            <button className="heroButton">Ścieżka rozwoju</button>
-          </a>
-          <Link href="#skills">
-            <button className="heroButton">Umiejętności</button>
-          </Link>
-          <Link href="#projects">
-            <button className="heroButton">Projekty</button>
-          </Link>
+          <button className="heroButton" onClick={navigate("#about")}>
+            O mnie
+          </button>
+          <button className="heroButton" onClick={navigate("#path")}>
+            Ścieżka rozwoju
+          </button>
+          <button className="heroButton" onClick={navigate("#skills")}>
+            Umiejętności
+          </button>
+          <button className="heroButton" onClick={navigate("#projects")}>
+            Projekty
+          </button>
         </div>
       </div>
     </div>

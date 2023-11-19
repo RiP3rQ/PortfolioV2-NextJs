@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import About from "@/components/about";
 import Contact from "@/components/contact";
-import Header from "@/components/header";
+import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import Path from "@/components/path";
 import Projects from "@/components/projects";
@@ -13,37 +12,38 @@ import { ModeToggle } from "@/components/themeToogle";
 export default function Home() {
   return (
     <main
-      className="dark:bg-[#030014] dark:text-white bg-slate-200 text-gray-700  h-screen overflow-scroll 
-    z-0 overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 relative"
+      className=" h-screen overflow-scroll overflow-x-hidden scrollbar z-30
+      scrollbar-track-gray-400/20 scrollbar-thumb-[#8950ff]/80 relative"
     >
-      {/* HEADER */}
-      <Header />
+      {/* Navbar */}
+      <Navbar />
+
       {/* HERO */}
-      <section id="hero">
+      <section id="hero" className="w-full min-h-screen bg-transparent">
         <Hero />
       </section>
       {/* ABOUT */}
-      <section id="about">
+      <section id="about" className="w-full min-h-screen bg-transparent">
         <About />
       </section>
       {/* PATH */}
-      <section id="path">
+      <section id="path" className="w-full min-h-screen bg-transparent">
         <Path />
       </section>
       {/* SKILLS */}
-      <section id="skills">
+      <section id="skills" className="w-full min-h-screen bg-transparent">
         <Skills />
       </section>
       {/* ALL PROJECTS */}
-      <section id="projects">
+      <section id="projects" className="w-full min-h-screen bg-transparent">
         <Projects />
       </section>
       {/* CONTACT ME */}
-      <section id="contact">
+      <section id="contact" className="w-full min-h-screen bg-transparent">
         <Contact />
       </section>
 
-      <footer className="sticky bottom-5 w-full">
+      <footer className="sticky bottom-5 w-full z-50">
         <div className="flex items-center justify-center">
           <Link href="#hero">
             <div

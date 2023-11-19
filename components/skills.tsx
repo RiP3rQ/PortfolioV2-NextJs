@@ -23,7 +23,7 @@ const Skills = () => {
       </h4>
 
       {/* Render Skills Learned */}
-      <div className="grid grid-cols-4 gap-5 mt-10">
+      <div className="grid grid-cols-3 sm:grid-cols-6 lg:grid-cols-8 gap-5 mt-40 sm:mt-10">
         {technologies?.map((skill, index) => (
           <SkillItem key={index} skill={skill} />
         ))}

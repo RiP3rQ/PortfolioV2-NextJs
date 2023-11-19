@@ -24,11 +24,9 @@ const SkillItem = ({ skill }: Props) => {
         className="absolute opacity-0 group-hover:opacity-95 transition duration-200 ease-in-out 
       group-hover:bg-white h-20 w-20 md:h-24 md:w-24 rounded-full z-0"
       >
-        <div className="flex items-center justify-center h-full">
-          <Label className="text-base font-bold text-black opacity-100">
-            {skill?.title}
-          </Label>
-        </div>
+        <Label className="flex items-center justify-center h-full w-full text-base font-bold text-black opacity-100 ">
+          {skill?.title}
+        </Label>
       </div>
     </div>
   );

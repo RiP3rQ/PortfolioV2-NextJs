@@ -13,48 +13,48 @@ import { ModeToggle } from "@/components/themeToogle";
 export default function Home() {
   return (
     <main
-      className="dark:bg-[rgb(36,36,36)] dark:text-white bg-slate-200 text-gray-700  h-screen snap-y snap-mandatory overflow-scroll 
+      className="dark:bg-[#030014] dark:text-white bg-slate-200 text-gray-700  h-screen overflow-scroll 
     z-0 overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 relative"
     >
       {/* HEADER */}
       <Header />
       {/* HERO */}
-      <section id="hero" className="snap-start">
+      <section id="hero">
         <Hero />
       </section>
       {/* ABOUT */}
-      <section id="about" className="snap-center">
+      <section id="about">
         <About />
       </section>
       {/* PATH */}
-      <section id="path" className="snap-center">
+      <section id="path">
         <Path />
       </section>
       {/* SKILLS */}
-      <section id="skills" className="snap-center">
+      <section id="skills">
         <Skills />
       </section>
       {/* ALL PROJECTS */}
-      <section id="projects" className="snap-center">
+      <section id="projects">
         <Projects />
       </section>
       {/* CONTACT ME */}
-      <section id="contact" className="snap-start">
+      <section id="contact">
         <Contact />
       </section>
 
-      <Link href="#hero">
-        <footer className="sticky bottom-5 w-full">
-          <div className="flex items-center justify-center">
+      <footer className="sticky bottom-5 w-full">
+        <div className="flex items-center justify-center">
+          <Link href="#hero">
             <div
-              className="h-12 w-8 rounded-full filter hover:bg-orange-400 cursor-pointer 
+              className="h-12 w-8 rounded-full filter hover:bg-[#2a0e61] cursor-pointer 
             border border-white flex items-center justify-center bg-gray-300"
             >
               <ArrowLongUpIcon className="h-8 w-8 text-white" />
             </div>
-          </div>
-        </footer>
-      </Link>
+          </Link>
+        </div>
+      </footer>
 
       <div className="fixed bottom-4 right-6 z-50">
         <ModeToggle />

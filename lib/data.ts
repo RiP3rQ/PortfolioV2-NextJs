@@ -35,16 +35,116 @@ export const aboutData = {
 
 export const technologies = [
   {
-    title: "React",
-    image: "/images/hero.png",
+    title: "CSS",
+    image: "/images/skills/css.png",
+  },
+  {
+    title: "Django",
+    image: "/images/skills/django.png",
+  },
+  {
+    title: "Docker",
+    image: "/images/skills/docker.webp",
+  },
+  {
+    title: "Express.js",
+    image: "/images/skills/express.png",
+  },
+  {
+    title: "FastAPI",
+    image: "/images/skills/fastapi.png",
+  },
+  {
+    title: "Firebase",
+    image: "/images/skills/firebase.png",
+  },
+  {
+    title: "Framer",
+    image: "/images/skills/framer.png",
+  },
+  {
+    title: "Git",
+    image: "/images/skills/git.png",
+  },
+  {
+    title: "GraphQL",
+    image: "/images/skills/graphql.png",
+  },
+  {
+    title: "HTML",
+    image: "/images/skills/html.png",
+  },
+  {
+    title: "JavaScript",
+    image: "/images/skills/js.png",
+  },
+  {
+    title: "NextAuth",
+    image: "/images/skills/nextauth.png",
+  },
+  {
+    title: "MongoDB",
+    image: "/images/skills/mongodb.png",
+  },
+  {
+    title: "MySQL",
+    image: "/images/skills/mysql.png",
   },
   {
     title: "Next.js",
-    image: "/images/hero.png",
+    image: "/images/skills/next.png",
+  },
+  {
+    title: "Node.js",
+    image: "/images/skills/node-js.png",
+  },
+  {
+    title: "PostgreSQL",
+    image: "/images/skills/postgres.png",
+  },
+  {
+    title: "Postman",
+    image: "/images/skills/postman.webp",
+  },
+  {
+    title: "Prisma",
+    image: "/images/skills/prisma.webp",
+  },
+  {
+    title: "Python",
+    image: "/images/skills/python.png",
+  },
+  {
+    title: "React",
+    image: "/images/skills/react.png",
+  },
+  {
+    title: "ReactNative",
+    image: "/images/skills/reactnative.png",
+  },
+  {
+    title: "ReactQuery",
+    image: "/images/skills/reactquery.png",
+  },
+  {
+    title: "Redux",
+    image: "/images/skills/redux.png",
+  },
+  {
+    title: "Sass",
+    image: "/images/skills/sass.png",
+  },
+  {
+    title: "Stripe",
+    image: "/images/skills/stripe.webp",
+  },
+  {
+    title: "TailwindCSS",
+    image: "/images/skills/tailwind.png",
   },
   {
     title: "TypeScript",
-    image: "/images/hero.png",
+    image: "/images/skills/ts.png",
   },
 ];
 

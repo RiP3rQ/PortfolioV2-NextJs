@@ -17,7 +17,7 @@ const SkillItem = ({ skill }: Props) => {
         transition={{ duration: 2 }}
         src={skill?.image}
         alt="skill_item"
-        className="rounded-full border border-gray-500 object-contain w-20 h-20 md:h-24 md:w-24 
+        className="rounded-full border border-gray-500 object-cover w-20 h-20 md:h-24 md:w-24 
         filter group-hover:grayscale transition duration-300 ease-in-out"
       />
       <div

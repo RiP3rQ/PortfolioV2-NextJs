@@ -39,6 +39,7 @@ const Navbar = () => {
           //   duration: 1.5,
           // }}
           className="flex items-center justify-center space-x-3 hover:animate-pulse cursor-pointer"
+          onClick={navigate("#hero")}
         >
           <Image src="/images/hero.png" alt="logo" width={40} height={50} />
           <span className="font-bold text-xl hidden md:block text-[#808080]">
@@ -106,7 +107,7 @@ const Navbar = () => {
             />
           ))}
           {/* LINK TO CONTACT FORM */}
-          <Link href="#contact" className="ml-2">
+          <Link href="#contact" className="mx-2">
             <EnvelopeIcon className="cursor-pointer bg-transparent text-[#808080] h-6 w-6 " />
           </Link>
         </motion.div>

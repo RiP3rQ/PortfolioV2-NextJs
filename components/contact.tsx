@@ -26,13 +26,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { sendEmail } from "@/actions/sendEmail";
 
-type Inputs = {
-  name: string;
-  email: string;
-  title: string;
-  message: string;
-};
-
 const formSchema = z.object({
   email: z.string().email({
     message: "Podaj poprawny adres email.",
@@ -92,27 +85,24 @@ const Contact = () => {
     justify-evenly mx-auto items-center"
     >
       <Toaster position="top-center" />
-      <h3 className="absolute top-24 uppercase tracking-[10px] text-gray-500 text-5xl">
+      <h3 className="absolute top-24 uppercase tracking-[10px] text-white text-5xl">
         Kontakt
       </h3>
 
-      <div className="flex flex-col space-y-10">
+      <div className="absolute top-40 flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
           Mam dokładnie to, czego potrzebujesz.
           <br />
-          <span className="decoration-[#F7AB0A]/50 underline">
-            {" "}
-            Porozmawiajmy
-          </span>
+          <span className="decoration-[#8950ff] underline">Porozmawiajmy</span>
         </h4>
 
         <div className="space-y-5">
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <MapPinIcon className="text-[#8950ff] h-7 w-7 animate-pulse" />
             <p>{contactData?.address}</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <EnvelopeIcon className="text-[#8950ff] h-7 w-7 animate-pulse" />
             <p>{contactData?.email}</p>
           </div>
         </div>
@@ -120,7 +110,7 @@ const Contact = () => {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="flex flex-col space-y-2 w-full mx-auto"
+            className="flex flex-col space-y-8 w-full mx-auto"
           >
             <div className="flex space-x-2">
               <FormField
@@ -136,10 +126,6 @@ const Contact = () => {
                         className="contactInput"
                       />
                     </FormControl>
-                    <FormDescription>
-                      To jest Tytuł twojej wiadomości, która wyświetli się w
-                      emailu.
-                    </FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -158,9 +144,6 @@ const Contact = () => {
                         className="contactInput"
                       />
                     </FormControl>
-                    <FormDescription>
-                      To jest twój adres email, na który się odezwę.
-                    </FormDescription>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -180,16 +163,13 @@ const Contact = () => {
                       className="contactInput"
                     />
                   </FormControl>
-                  <FormDescription>
-                    To jest treść twojej wiadomości.
-                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <Button
               type="submit"
-              className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg w-full hover:text-[#F7AB0A] transition-all group-hover:translate-x-1 group-hover:-translate-y-1"
+              className="bg-[#8950ff] py-5 px-10 rounded-md text-white font-bold text-lg w-full hover:text-[#8950ff] transition-all group-hover:translate-x-1 group-hover:-translate-y-1"
             >
               <div className="flex items-center justify-center space-x-4">
                 <div>Wyślij</div>

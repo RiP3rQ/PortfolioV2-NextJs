@@ -26,12 +26,13 @@ const Hero = () => {
   return (
     <div className="h-screen flex flex-col space-y-2 items-center justify-center text-center overflow-hidden">
       <HeroBackgroundCircles />
-      <img
-        src={heroData.img}
-        alt="Profile Image"
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
-      />
       <div className="z-20">
+        <img
+          src={heroData.img}
+          alt="Profile Image"
+          className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        />
+
         <h2 className="text-sm uppercase pb-2 tracking-[10px] text-gray-500">
           {heroData.role}
         </h2>

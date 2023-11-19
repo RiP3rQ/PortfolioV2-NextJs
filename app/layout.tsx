@@ -22,31 +22,18 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "dark:bg-[#030014] dark:text-white bg-slate-200 text-gray-700"
+          "dark:bg-[#030014] dark:text-white bg-slate-200 text-gray-700 overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#8950ff]/80"
         )}
       >
-        <div className="min-h-screen w-full relative">
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {/* MIDDLE NAVBAR BLACKHOLE */}
-            <div className="w-full h-full flex flex-col absolute top-[-430px] opacity-0 dark:opacity-100 z-10">
-              <video
-                autoPlay
-                muted
-                loop
-                className="rotate-180 w-full h-full object-cover"
-              >
-                <source src="/blackhole.webm" type="video/webm" />
-              </video>
-            </div>
-            <StarsCanvas />
-            {children}
-          </ThemeProvider>
-        </div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <StarsCanvas />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -87,10 +87,4 @@
     text-gray-500 placeholder-gray-500 transition-all focus:border-[#2a0e61]/40 
     hover:border-[#2a0e61]/40;
   }
-
-  .projectsButton {
-    @apply px-6 py-2 border border-[#2a0e61] rounded-full uppercase text-xs
-    tracking-widest text-gray-500 transition-all hover:text-[#8950ff]/40 
-    hover:border-[#2a0e61]/40;
-  }
 }

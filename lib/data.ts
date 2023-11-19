@@ -29,7 +29,7 @@ export const aboutData = {
     i umiejętność pracy w zespole. Cenię sobie zdrowy tryb życia i regularne ćwiczenia na siłowni, 
     co pomaga mi zachować równowagę między pracą a życiem prywatnym. Jestem osobą bezpośrednią, 
     która nie ma problemów z komunikacją. Jestem przekonany, że moja pasja do programowania i 
-    ciągłe dążenie do samodoskonalenia będą stanowić wartość dodaną dla każdego zespołu.`,
+    ciągłe dążenie do samodoskonalenia będą stanowić wartość dodatnią do każdego zespołu.`,
   profilePic: "/images/hero.png",
 };
 
@@ -146,52 +146,175 @@ export const technologies = [
     title: "TypeScript",
     image: "/images/skills/ts.png",
   },
+  {
+    title: "ThirdWeb",
+    image: "/images/skills/thirdweb.png",
+  },
+  {
+    title: "Kubernetes",
+    image: "/images/skills/kubernetes.png",
+  },
 ];
 
 export const paths = [
   {
-    title: "Portfolio",
-    date: "2022",
-    description: "Opis",
-    image: "/images/hero.png",
+    title: "FastAPI / Django",
+    startingDate: "2023/10/01",
+    endingDate: "Teraz",
+    description: "Programowanie backendu w FastAPI oraz Django",
+    image: "/images/stack/fastapi.png",
     technologies: [
       {
-        title: "React",
-        image: "/images/hero.png",
+        image: "/images/skills/django.png",
       },
       {
-        title: "Next.js",
-        image: "/images/hero.png",
+        image: "/images/skills/docker.webp",
       },
       {
-        title: "TypeScript",
-        image: "/images/hero.png",
+        image: "/images/skills/fastapi.png",
+      },
+      {
+        image: "/images/skills/postman.webp",
+      },
+      {
+        image: "/images/skills/python.png",
+      },
+      {
+        image: "/images/skills/kubernetes.png",
       },
     ],
-    startingDate: "2021-07-01",
-    endingDate: "2021-07-01",
   },
   {
-    title: "Portfolio",
-    date: "2022",
-    description: "Opis",
-    image: "/images/hero.png",
+    title: "ThirdWeb",
+    description:
+      "Tworzenie aplikacji webowych pozwalających na interackję z Blockchainem",
+    image: "/images/stack/thirdweb.png",
     technologies: [
       {
-        title: "React",
-        image: "/images/hero.png",
+        image: "/images/skills/next.png",
       },
       {
-        title: "Next.js",
-        image: "/images/hero.png",
+        image: "/images/skills/react.png",
       },
       {
-        title: "TypeScript",
-        image: "/images/hero.png",
+        image: "/images/skills/tailwind.png",
+      },
+      {
+        image: "/images/skills/ts.png",
+      },
+      {
+        image: "/images/skills/thirdweb.png",
       },
     ],
-    startingDate: "2021-07-01",
-    endingDate: "2021-07-01",
+    startingDate: "2023/02/24",
+    endingDate: "2023/09/30",
+  },
+  {
+    title: "MERN",
+    description:
+      "Tworzenie serwisów e-commerce oraz aplikacji webowych w technologiach MERN",
+    image: "/images/stack/mern.png",
+    technologies: [
+      {
+        image: "/images/skills/mongodb.png",
+      },
+      {
+        image: "/images/skills/express.png",
+      },
+      {
+        image: "/images/skills/node-js.png",
+      },
+      {
+        image: "/images/skills/react.png",
+      },
+      {
+        image: "/images/skills/tailwind.png",
+      },
+    ],
+    startingDate: "2023/01/19",
+    endingDate: "2023/02/23",
+  },
+  {
+    title: "Next.js",
+    description:
+      "Tworzenie komplekosowych aplikacji webowych w technologiach Next.js",
+    image: "/images/stack/next.png",
+    technologies: [
+      {
+        image: "/images/skills/firebase.png",
+      },
+      {
+        image: "/images/skills/framer.png",
+      },
+      {
+        image: "/images/skills/graphql.png",
+      },
+      {
+        image: "/images/skills/nextauth.png",
+      },
+      {
+        image: "/images/skills/mysql.png",
+      },
+      {
+        image: "/images/skills/next.png",
+      },
+      {
+        image: "/images/skills/postgres.png",
+      },
+      {
+        image: "/images/skills/prisma.webp",
+      },
+      {
+        image: "/images/skills/reactquery.png",
+      },
+      {
+        image: "/images/skills/redux.png",
+      },
+      {
+        image: "/images/skills/stripe.webp",
+      },
+      {
+        image: "/images/skills/tailwind.png",
+      },
+      {
+        image: "/images/skills/ts.png",
+      },
+    ],
+    startingDate: "2022/11/18",
+    endingDate: "2023/01/18",
+  },
+  {
+    title: "ReactNative/React",
+    description: "Nauka podstaw ReactNative oraz React",
+    image: "/images/stack/react.png",
+    technologies: [
+      {
+        image: "/images/skills/css.png",
+      },
+      {
+        image: "/images/skills/git.png",
+      },
+      {
+        image: "/images/skills/html.png",
+      },
+      {
+        image: "/images/skills/js.png",
+      },
+      {
+        image: "/images/skills/react.png",
+      },
+      {
+        image: "/images/skills/reactnative.png",
+      },
+      {
+        image: "/images/skills/redux.png",
+      },
+      {
+        image: "/images/skills/sass.png",
+      },
+    ],
+    startingDate: "2020/01/01",
+    endingDate: "2022/11/17",
   },
 ];
 

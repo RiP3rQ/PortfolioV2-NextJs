@@ -32,18 +32,17 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className="min-h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-16 md:top-10 uppercase tracking-[10px] text-gray-500 text-5xl">
+      <h3 className="absolute top-24 uppercase tracking-[10px] text-white text-5xl">
         Projekty
       </h3>
 
-      <div className="absolute top-28 md:flex md:flex-row md:items-center md:justify-center md:space-x-8 grid grid-cols-3 z-30">
+      <div className="absolute top-40 md:flex md:flex-row md:items-center md:justify-center md:space-x-8 grid grid-cols-3 z-30">
         {categoriesState.map((category, index) => (
           <button
-            className={`projectsButton ${
-              activeCategory === category &&
-              "text-[#F7AB0A]/40 border-[#F7AB0A]/40"
+            className={`heroButton ${
+              activeCategory === category && "text-white border-[#8950ff]"
             }`}
             key={index}
             onClick={(e) => handleClick(e, category)}
@@ -54,7 +53,7 @@ const Projects = () => {
       </div>
       {/* Project Cards */}
       <div
-        className="absolute top-36 bottom-20 flex w-full overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
+        className="absolute top-56 bottom-20 flex w-full overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
       scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 text-center"
       >
         {projects?.map((project: Projects, index) => (

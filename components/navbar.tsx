@@ -8,6 +8,7 @@ import { socials } from "@/lib/data";
 import Image from "next/image";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import NavigationButton from "./navigationButton";
+import MobileNavbar from "./mobile/mobileNavbar";
 
 const Navbar = () => {
   const navigate = (id: string) => () => {
@@ -38,46 +39,59 @@ const Navbar = () => {
           // transition={{
           //   duration: 1.5,
           // }}
-          className="flex items-center justify-center space-x-3 hover:animate-pulse cursor-pointer"
+          className="hidden md:flex items-center justify-center space-x-3 hover:animate-pulse cursor-pointer"
           onClick={navigate("#hero")}
         >
           <Image src="/images/hero.png" alt="logo" width={40} height={50} />
-          <span className="font-bold text-xl hidden md:block text-[#808080]">
-            RiP3rQ
-          </span>
+          <span className="font-bold text-xl text-[#808080]">RiP3rQ</span>
         </motion.div>
 
         {/* NAVIGATION | CENTER*/}
         <motion.div
-        // initial={{
-        //   opacity: 0,
-        //   scale: 0.5,
-        // }}
-        // animate={{
-        //   opacity: 1,
-        //   scale: 1,
-        // }}
-        // transition={{
-        //   duration: 1.5,
-        // }}
-        >
-          <div
-            className="flex items-center justify-center space-x-3 h-auto
+          // initial={{
+          //   opacity: 0,
+          //   scale: 0.5,
+          // }}
+          // animate={{
+          //   opacity: 1,
+          //   scale: 1,
+          // }}
+          // transition={{
+          //   duration: 1.5,
+          // }}
+          className="hidden md:flex items-center justify-center space-x-3 h-auto
     border border-[#7042f861] bg-[#0300145e] rounded-full text-white"
-          >
-            <NavigationButton text="O mnie" href="#about" navigate={navigate} />
-            <NavigationButton text="Ścieżka" href="#path" navigate={navigate} />
-            <NavigationButton
-              text="Umiejętności"
-              href="#skills"
-              navigate={navigate}
-            />
-            <NavigationButton
-              text="Projekty"
-              href="#projects"
-              navigate={navigate}
-            />
-          </div>
+        >
+          <NavigationButton text="O mnie" href="#about" navigate={navigate} />
+          <NavigationButton text="Ścieżka" href="#path" navigate={navigate} />
+          <NavigationButton
+            text="Umiejętności"
+            href="#skills"
+            navigate={navigate}
+          />
+          <NavigationButton
+            text="Projekty"
+            href="#projects"
+            navigate={navigate}
+          />
+        </motion.div>
+
+        {/* NAVIGATION | MOBILE*/}
+        <motion.div
+          // initial={{
+          //   opacity: 0,
+          //   scale: 0.5,
+          // }}
+          // animate={{
+          //   opacity: 1,
+          //   scale: 1,
+          // }}
+          // transition={{
+          //   duration: 1.5,
+          // }}
+          className="flex md:hidden items-start justify-center h-auto"
+        >
+          <MobileNavbar />
         </motion.div>
 
         {/* SOCIAL ICONS | RIGHT*/}

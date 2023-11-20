@@ -86,7 +86,7 @@ const Contact = () => {
     >
       <Toaster position="top-center" />
       <h3
-        className="absolute top-24 uppercase tracking-[10px] text-white 
+        className="absolute top-24 uppercase tracking-[10px] text-[#8950ff] dark:text-white 
       text-xl sm:text-3xl lg:text-5xl"
       >
         Kontakt

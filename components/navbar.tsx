@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <header
       className="sticky top-0 p-0 max-w-full z-50 xl:items-center
-      overflow-x-hidden shadow-lg shadow-[#2a0e61] bg-[#03001417] backdrop-blur-md"
+      overflow-x-hidden dark:shadow-lg dark:shadow-[#2a0e61] bg-[#03001417] backdrop-blur-md"
     >
       <div className="max-w-7xl flex items-center justify-between mx-auto">
         {/* LOGO | LEFT*/}

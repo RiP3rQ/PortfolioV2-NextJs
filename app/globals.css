@@ -79,7 +79,7 @@
   .heroButton {
     @apply px-6 py-2 border border-[#2a0e61] rounded-full uppercase text-xs
     tracking-widest text-gray-500 transition-all hover:text-white 
-    hover:border-[#8950ff];
+    hover:border-[#8950ff] hover:bg-[#8950ff] dark:hover:bg-transparent;
   }
 
   .contactInput {

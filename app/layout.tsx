@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "dark:bg-[#030014] dark:text-white bg-slate-200 text-gray-700 overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#8950ff]/80"
+          "dark:bg-[#030014] dark:text-white bg-slate-100 text-gray-700 overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#8950ff]/80"
         )}
       >
         <ThemeProvider

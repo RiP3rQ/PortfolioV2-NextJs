@@ -34,7 +34,7 @@ const Projects = () => {
       transition={{ duration: 1.5 }}
       className="min-h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[10px] text-white text-5xl">
+      <h3 className="absolute top-24 uppercase tracking-[10px] text-[#8950ff] dark:text-white text-5xl">
         Projekty
       </h3>
 

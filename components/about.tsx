@@ -14,7 +14,7 @@ const About = () => {
     md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
       <h3
-        className="absolute top-24 uppercase tracking-[10px] text-white 
+        className="absolute top-24 uppercase tracking-[10px] text-[#8950ff] dark:text-white 
       text-xl sm:text-3xl lg:text-5xl"
       >
         O mnie

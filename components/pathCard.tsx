@@ -25,7 +25,7 @@ const PathCard = ({ path }: Props) => {
       visible={true}
       key={path?.title}
       id={path?.title}
-      contentStyle={{ background: "rgb(148 163 184 / 0.1)", color: "#fff" }}
+      contentStyle={{ background: "rgb(148 163 184 / 0.1)", color: "#808080" }}
       contentArrowStyle={{ borderRight: "7px solid  rgb(148 163 184 / 0.1)" }}
       date={`${path?.startingDate} - ${path?.endingDate}`}
       iconStyle={{ background: "rgb(148 163 184 / 0.1)" }}
@@ -40,9 +40,11 @@ const PathCard = ({ path }: Props) => {
       }
     >
       <div className="flex flex-col items-center justify-center">
-        <h3 className="text-white text-2xl font-bold">{path?.title}</h3>
+        <h3 className="text-[#8950ff] dark:text-white text-2xl font-bold">
+          {path?.title}
+        </h3>
         <p
-          className="text-[#8950ff] text-lg font-semibold"
+          className="text-gray-500 dark:text-[#8950ff] text-lg font-semibold"
           style={{ margin: 0 }}
         >
           {path?.description}

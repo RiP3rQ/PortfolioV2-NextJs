@@ -14,7 +14,7 @@ const Skills = () => {
     justify-center mx-auto items-center xl:space-y-0 mb-40 xl:mb-0"
     >
       <h3
-        className="absolute top-24 uppercase tracking-[10px] text-white 
+        className="absolute top-24 uppercase tracking-[10px] text-[#8950ff] dark:text-white  
         text-xl sm:text-3xl lg:text-5xl"
       >
         Umiejętności

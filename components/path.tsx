@@ -17,7 +17,7 @@ const Path = () => {
        max-w-7xl xl:px-10 justify-center mx-auto items-center xl:space-y-0 mb-96"
     >
       <h3
-        className="absolute top-24 uppercase tracking-[10px] text-white 
+        className="absolute top-24 uppercase tracking-[10px] text-[#8950ff] dark:text-white 
       text-xl sm:text-3xl lg:text-5xl"
       >
         Moja ścieżka

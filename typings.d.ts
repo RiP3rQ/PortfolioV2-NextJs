@@ -7,7 +7,7 @@ export interface Paths {
   title: string;
   description: string;
   image: Image;
-  technologies: Technologies[];
+  technologies: { image: string }[];
   startingDate: date;
   endingDate: date;
 }
@@ -17,6 +17,10 @@ export interface Projects extends SanityBody {
   image: Image;
   linkToGithub: string;
   summary: string;
-  technologies: Technologies[];
+  technologies: [
+    {
+      image: Image;
+    }
+  ];
   category: string;
 }

@@ -13,14 +13,20 @@ const Path = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="min-h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl xl:px-10 
-    justify-center mx-auto items-center xl:space-y-0 mb-96"
+      className="min-h-screen flex relative flex-col text-center md:text-left md:flex-row
+       max-w-7xl xl:px-10 justify-center mx-auto items-center xl:space-y-0 mb-96"
     >
-      <h3 className="absolute top-24 uppercase tracking-[10px] text-white text-5xl">
+      <h3
+        className="absolute top-24 uppercase tracking-[10px] text-white 
+      text-xl sm:text-3xl lg:text-5xl"
+      >
         Moja ścieżka
       </h3>
 
-      <h4 className="absolute top-40 uppercase tracking-[3px] text-gray-500 text-sm">
+      <h4
+        className="absolute top-40 uppercase tracking-[3px] text-gray-500 
+        text-xs sm:text-sm lg:text-base"
+      >
         Główne technologie, które opanowałem do tej pory
       </h4>
 

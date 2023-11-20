@@ -44,7 +44,7 @@ export const technologies = [
   },
   {
     title: "Docker",
-    image: "/images/skills/docker.webp",
+    image: "/images/skills/docker.png",
   },
   {
     title: "Express.js",
@@ -104,7 +104,7 @@ export const technologies = [
   },
   {
     title: "Postman",
-    image: "/images/skills/postman.webp",
+    image: "/images/skills/postman.png",
   },
   {
     title: "Prisma",
@@ -168,13 +168,13 @@ export const paths = [
         image: "/images/skills/django.png",
       },
       {
-        image: "/images/skills/docker.webp",
+        image: "/images/skills/docker.png",
       },
       {
         image: "/images/skills/fastapi.png",
       },
       {
-        image: "/images/skills/postman.webp",
+        image: "/images/skills/postman.png",
       },
       {
         image: "/images/skills/python.png",

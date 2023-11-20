@@ -47,7 +47,10 @@ const PathCard = ({ path }: Props) => {
         >
           {path?.description}
         </p>
-        <div className="sm:flex sm:flex-row sm:space-x-1 grid grid-cols-10">
+        <div
+          className="sm:flex sm:flex-row sm:items-center sm:justify-center space-x-1 
+        grid grid-cols-10"
+        >
           {path?.technologies?.map((tech, index) => (
             <img
               key={index}

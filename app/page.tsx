@@ -6,8 +6,8 @@ import Hero from "@/components/hero";
 import Path from "@/components/path";
 import Projects from "@/components/projects";
 import Skills from "@/components/skills";
-import { ArrowLongUpIcon } from "@heroicons/react/24/outline";
 import { ModeToggle } from "@/components/themeToogle";
+import ScrollUpButton from "@/components/scrollUp/scrollUpButton";
 
 export default function Home() {
   return (
@@ -54,18 +54,9 @@ export default function Home() {
         <Contact />
       </section>
 
-      <footer className="sticky bottom-5 w-full z-50">
-        <div className="flex items-center justify-center">
-          <Link href="#hero" scroll={true}>
-            <div
-              className="h-12 w-8 rounded-full filter hover:bg-[#2a0e61] cursor-pointer 
-            border border-white flex items-center justify-center bg-gray-300"
-            >
-              <ArrowLongUpIcon className="h-8 w-8 text-white" />
-            </div>
-          </Link>
-        </div>
-      </footer>
+      <div className="fixed bottom-16 right-6 z-50">
+        <ScrollUpButton />
+      </div>
 
       <div className="fixed bottom-4 right-6 z-50">
         <ModeToggle />

@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: Props) => {
         transition={{ duration: 1.5 }}
         className="w-96 h-72 xl:h-[300px] xl:w-[400px] object-contain"
         src={project?.image}
-        alt={project?.name}
+        alt={project?.title}
       />
 
       <motion.div
@@ -26,7 +26,7 @@ const ProjectCard = ({ project }: Props) => {
         transition={{ duration: 1.5 }}
         className="px-0 md:px-10 mt-0"
       >
-        <h4 className="text-4xl font-bold">{project?.name}</h4>
+        <h4 className="text-4xl font-bold">{project?.title}</h4>
         <p className="font-light text-2xl mt-1">Użyte technologie:</p>
         <div className="flex space-x-2 my-2 items-center justify-center">
           {/* Tech used  */}

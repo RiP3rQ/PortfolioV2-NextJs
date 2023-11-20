@@ -13,14 +13,10 @@ export interface Paths {
 }
 
 export interface Projects extends SanityBody {
-  name: string;
+  title: string;
+  imageThumbnail: Image;
   image: Image;
   linkToGithub: string;
   summary: string;
-  technologies: [
-    {
-      image: Image;
-    }
-  ];
-  category: string;
+  technologies: Technologies[];
 }

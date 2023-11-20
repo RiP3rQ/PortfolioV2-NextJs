@@ -135,6 +135,10 @@ export const technologies = [
     image: "/images/skills/sass.png",
   },
   {
+    title: "Shadcn/ui",
+    image: "/images/skills/shadcn.png",
+  },
+  {
     title: "Stripe",
     image: "/images/skills/stripe.webp",
   },
@@ -153,6 +157,10 @@ export const technologies = [
   {
     title: "Kubernetes",
     image: "/images/skills/kubernetes.png",
+  },
+  {
+    title: "Mapbox",
+    image: "/images/skills/mapbox.png",
   },
 ];
 
@@ -279,6 +287,9 @@ export const paths = [
       {
         image: "/images/skills/ts.png",
       },
+      {
+        image: "/images/skills/shadcn.png",
+      },
     ],
     startingDate: "2022/11/18",
     endingDate: "2023/01/18",
@@ -320,79 +331,282 @@ export const paths = [
 
 export const projects = [
   {
-    id: "1",
-    name: "Portfolio",
-    image: "/images/hero.png",
-    linkToGithub: "",
-    summary: "Opis",
+    title: "Taskify (Klon Trello)",
+    imageThumbnail: "/images/thumbnails/taskify_thumbnail.png",
+    image: "/images/projects/taskify.png",
+    linkToGithub: "https://github.com/RiP3rQ/Trello-Clone-NextJs-",
+    summary: `Aplikacja Fullstack NextJs 14 umożliwiająca użytkownikom tworzenie tablic z listami i kartami, które mogą przyspieszyć proces 
+      tworzenia oprogramowania lub po prostu tworzyć notatki. Ta aplikacja umożliwia użytkownikom organizowanie list i kart za pomocą 
+      funkcji „przeciągnij i upuść”.`,
     technologies: [
       {
-        id: "1",
-        title: "React",
-        image: "/images/hero.png",
-      },
-      {
-        id: "2",
         title: "Next.js",
-        image: "/images/hero.png",
+        image: "/images/skills/next.png",
       },
       {
-        id: "3",
+        title: "React",
+        image: "/images/skills/react.png",
+      },
+      {
         title: "TypeScript",
-        image: "/images/hero.png",
+        image: "/images/skills/ts.png",
+      },
+      {
+        title: "TailwindCSS",
+        image: "/images/skills/tailwind.png",
+      },
+      {
+        title: "Prisma",
+        image: "/images/skills/prisma.webp",
+      },
+      {
+        title: "MySQL",
+        image: "/images/skills/mysql.png",
+      },
+      {
+        title: "Stripe",
+        image: "/images/skills/stripe.webp",
+      },
+      {
+        title: "Shadcn/ui",
+        image: "/images/skills/shadcn.png",
       },
     ],
-    category: "Web",
   },
   {
-    id: "2",
-    name: "Portfolio",
-    image: "/images/hero.png",
-    linkToGithub: "",
-    summary: "Opis",
+    title: "Platforma E-learningowa",
+    imageThumbnail: "/images/thumbnails/learning_thumbnail.png",
+    image: "/images/projects/learning.png",
+    linkToGithub: "https://github.com/RiP3rQ/Learning-Platform-NextJS",
+    summary: `Aplikacja Fullstack NextJs 13 umożliwiająca użytkownikom na naukę treści kursów udostępnianych przez autorów pod postacią 
+      filmików video oraz dodatkowych elementów udostępnianych przez nauczycieli. Aplikacja zalicza poszczególne etapy za pośrednictwem 
+      ukończenia filmu lub za pomocą kliknięcia przycisku. Dostęp do kursów można otrzymać po opłaceniu kosztów za pośrednictwem platformy Stripe.`,
     technologies: [
       {
-        id: "1",
-        title: "React",
-        image: "/images/hero.png",
-      },
-      {
-        id: "2",
         title: "Next.js",
-        image: "/images/hero.png",
+        image: "/images/skills/next.png",
       },
       {
-        id: "3",
+        title: "React",
+        image: "/images/skills/react.png",
+      },
+      {
         title: "TypeScript",
-        image: "/images/hero.png",
+        image: "/images/skills/ts.png",
+      },
+      {
+        title: "TailwindCSS",
+        image: "/images/skills/tailwind.png",
+      },
+      {
+        title: "Prisma",
+        image: "/images/skills/prisma.webp",
+      },
+      {
+        title: "MongoDb",
+        image: "/images/skills/mongodb.png",
+      },
+      {
+        title: "Stripe",
+        image: "/images/skills/stripe.webp",
+      },
+      {
+        title: "Shadcn/ui",
+        image: "/images/skills/shadcn.png",
       },
     ],
-    category: "Web",
   },
   {
-    id: "3",
-    name: "Portfolio",
-    image: "/images/hero.png",
-    linkToGithub: "",
-    summary: "Opis",
+    title: "Rynek NFT",
+    imageThumbnail: "/images/thumbnails/ryneknft_thumbnail.png",
+    image: "/images/projects/ryneknft.png",
+    linkToGithub: "https://github.com/RiP3rQ/NFT-Market-NextJs-V2",
+    summary: `Aplikacja Fullstack NextJs 13 umożliwiająca użytkownikom na interakcję z Blockchainem pod postacią tokenów NFT.
+      Użytkownicy mogą tworzyć własne tokeny NFT, a także kupować i sprzedawać tokeny NFT innych użytkowników. Dodatkowo użytkownicy
+      mogą pozyskać tokeny NFT z gotowych kolekcji. Obsługa płatności odbywa się za pomocą portfela kryptowalut MetaMask.`,
     technologies: [
       {
-        id: "1",
-        title: "React",
-        image: "/images/hero.png",
-      },
-      {
-        id: "2",
         title: "Next.js",
-        image: "/images/hero.png",
+        image: "/images/skills/next.png",
       },
       {
-        id: "3",
+        title: "React",
+        image: "/images/skills/react.png",
+      },
+      {
         title: "TypeScript",
-        image: "/images/hero.png",
+        image: "/images/skills/ts.png",
+      },
+      {
+        title: "TailwindCSS",
+        image: "/images/skills/tailwind.png",
+      },
+      {
+        title: "Prisma",
+        image: "/images/skills/prisma.webp",
+      },
+      {
+        title: "MongoDb",
+        image: "/images/skills/mongodb.png",
+      },
+      {
+        title: "ThirdWeb",
+        image: "/images/skills/thirdweb.png",
+      },
+      {
+        title: "Shadcn/ui",
+        image: "/images/skills/shadcn.png",
       },
     ],
-    category: "Web",
+  },
+  {
+    title: "TravelMate - Aplikacja podróżnicza",
+    imageThumbnail: "/images/thumbnails/travelmate_thumbnail.png",
+    image: "/images/projects/travelmate.png",
+    linkToGithub: "https://github.com/RiP3rQ/TravelMate-NextJs-V2",
+    summary: `Aplikacja Fullstack NextJs 13 umożliwiająca użytkownikom zaplanować swoją przyszłą wycieczkę. Użytkownicy mogą
+      tworzyć własne wycieczki, a także zamawiać noclegi oraz bilety na płatne atrakcje. Aplikacja jest na tyle kompleksowa, że 
+      pozwala użytkownikom zobaczyć lokalizację danych atrakcji oraz noclegów na mapie. Dodatkowo w trosce o użytkowników aplikacja
+      zaimplementowała funkcję nawigacji do wybranego noclegu oraz wdrożono funkcję listy ToDo, która pozwala użytkownikom na
+      zapisanie swoich planów.`,
+    technologies: [
+      {
+        title: "Next.js",
+        image: "/images/skills/next.png",
+      },
+      {
+        title: "React",
+        image: "/images/skills/react.png",
+      },
+      {
+        title: "JavaScript",
+        image: "/images/skills/js.png",
+      },
+      {
+        title: "TailwindCSS",
+        image: "/images/skills/tailwind.png",
+      },
+      {
+        title: "Prisma",
+        image: "/images/skills/prisma.webp",
+      },
+      {
+        title: "MongoDb",
+        image: "/images/skills/mongodb.png",
+      },
+      {
+        title: "NextAuth",
+        image: "/images/skills/nextauth.png",
+      },
+      {
+        title: "Mapbox",
+        image: "/images/skills/mapbox.png",
+      },
+    ],
+  },
+  {
+    title: "Klon Uber/UberEats",
+    imageThumbnail: "/images/thumbnails/uber_thumbnail.png",
+    image: "/images/projects/uber.png",
+    linkToGithub: "https://github.com/RiP3rQ/UberClone-ReactNative-",
+    summary: `Aplikacja mobilna React Native umożliwiająca użytkownikom na zamawianie jedzenia oraz przewóz osób. 
+    Użytkownicy mogą zamawiać jedzenie z restauracji, a także przewóz z wybranego miejsca do miejsca docelowego.
+    Aplikcja korzysta z Google Maps API, aby wyświetlić użytkownikom mapę oraz listę lokalizacją dostępnych restauracji.
+    Dodatkowo aplikacja korzysta z YELP API, aby wyświetlić użytkownikom listę restauracji w pobliżu.
+    `,
+    technologies: [
+      {
+        title: "ReactNative",
+        image: "/images/skills/reactnative.png",
+      },
+      {
+        title: "JavaScript",
+        image: "/images/skills/js.png",
+      },
+      {
+        title: "TailwindCSS",
+        image: "/images/skills/tailwind.png",
+      },
+      {
+        title: "Firebase",
+        image: "/images/skills/firebase.png",
+      },
+      {
+        title: "Redux",
+        image: "/images/skills/redux.png",
+      },
+    ],
+  },
+  {
+    title: "Klon Discorda",
+    imageThumbnail: "/images/thumbnails/discord_thumbnail.png",
+    image: "/images/projects/discord.png",
+    linkToGithub: "https://github.com/RiP3rQ/Discord-Clone-NextJs",
+    summary: `Aplikacja Fullstack NextJs 13 umożliwiająca użytkownikom na przeprowadzanie konwersacji tekstowych w 
+    czasie rzeczywistym. Użytkownicy mogą tworzyć własne serwery, a także kanały. Dodatkowo użytkownicy mogą wysyłać
+    pliki oraz treści audio. Aplikacja posiada również funkcję wyszukiwania użytkowników oraz kanałów. Nie mogło również
+    zabrakność funkcji ról, która pozwala administratorom na nadawanie uprawnień użytkownikom.`,
+    technologies: [
+      {
+        title: "Next.js",
+        image: "/images/skills/next.png",
+      },
+      {
+        title: "React",
+        image: "/images/skills/react.png",
+      },
+      {
+        title: "JavaScript",
+        image: "/images/skills/js.png",
+      },
+      {
+        title: "TailwindCSS",
+        image: "/images/skills/tailwind.png",
+      },
+      {
+        title: "Prisma",
+        image: "/images/skills/prisma.webp",
+      },
+      {
+        title: "MongoDb",
+        image: "/images/skills/mongodb.png",
+      },
+      {
+        title: "Shadcn/ui",
+        image: "/images/skills/shadcn.png",
+      },
+    ],
+  },
+  {
+    title: "Klon ChatGPT",
+    imageThumbnail: "/images/thumbnails/chatgpt_thumbnail.png",
+    image: "/images/projects/chatgpt.png",
+    linkToGithub: "https://github.com/RiP3rQ/ChatGPT-clone-Next.js-",
+    summary: `Aplikacja Fullstack NextJs 13 umożliwiająca użytkownikom na interakcję z sztuczna inteligencją.
+    Użytkownicy mogą rozmawiać z sztuczną inteligencją, która odpowiada na pytania użytkowników. Aplikacja korzysta
+    z API ChatGPT, aby uzyskać odpowiedzi na pytania użytkowników.`,
+    technologies: [
+      {
+        title: "Next.js",
+        image: "/images/skills/next.png",
+      },
+      {
+        title: "React",
+        image: "/images/skills/react.png",
+      },
+      {
+        title: "TypeScript",
+        image: "/images/skills/ts.png",
+      },
+      {
+        title: "TailwindCSS",
+        image: "/images/skills/tailwind.png",
+      },
+      {
+        title: "Firebase",
+        image: "/images/skills/firebase.png",
+      },
+    ],
   },
 ];
 

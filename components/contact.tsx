@@ -85,12 +85,15 @@ const Contact = () => {
     justify-evenly mx-auto items-center"
     >
       <Toaster position="top-center" />
-      <h3 className="absolute top-24 uppercase tracking-[10px] text-white text-5xl">
+      <h3
+        className="absolute top-24 uppercase tracking-[10px] text-white 
+      text-xl sm:text-3xl lg:text-5xl"
+      >
         Kontakt
       </h3>
 
       <div className="absolute top-40 flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-lg sm:text-2xl lg:text-4xl font-semibold text-center">
           Mam dokładnie to, czego potrzebujesz.
           <br />
           <span className="decoration-[#8950ff] underline">Porozmawiajmy</span>
@@ -110,7 +113,7 @@ const Contact = () => {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="flex flex-col space-y-8 w-full mx-auto"
+            className="flex flex-col space-y-8 w-full mx-auto px-4"
           >
             <div className="flex space-x-2">
               <FormField

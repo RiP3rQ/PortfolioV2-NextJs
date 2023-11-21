@@ -84,7 +84,7 @@ const Contact = () => {
       className="min-h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 
     justify-evenly mx-auto items-center"
     >
-      <Toaster position="top-center" />
+      <Toaster position="bottom-left" />
       <h3
         className="absolute top-24 uppercase tracking-[10px] text-[#8950ff] dark:text-white 
       text-xl sm:text-3xl lg:text-5xl"

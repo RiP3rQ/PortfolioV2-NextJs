@@ -29,10 +29,10 @@ const ProjectButtons = ({ project }: Props) => {
         href={project.linkToGithub}
         rel="noopener noreferrer"
         target="_blank"
-        className="hover:bg-[#8950ff] bg-gray-400 w-28 h-28 rounded-full flex flex-col items-center justify-center cursor-pointer"
+        className="hover:bg-[#8950ff] bg-gray-400 w-14 h-14 sm:w-28 sm:h-28 rounded-full flex flex-col items-center justify-center cursor-pointer"
       >
-        <CodeBracketIcon className="w-10 h-10 " />
-        <p className="text-xs">Kod źródłowy</p>
+        <CodeBracketIcon className="w-5 h-5 sm:w-10 sm:h-10 " />
+        <p className="text-[6px] sm:text-xs">Kod źródłowy</p>
       </Link>
     </div>
   );

@@ -29,7 +29,8 @@ const ProjectCard = ({ project }: Props) => {
     >
       <div
         className="bg-gray-300 hover:bg-gray-200 max-w-4xl border border-[#8950ff] rounded-lg overflow-hidden transition
-       dark:text-white dark:bg-white/10 dark:hover:bg-white/20 grid grid-cols-2 relative"
+       dark:text-white dark:bg-white/10 dark:hover:bg-white/20 
+       grid grid-cols-1 sm:grid-cols-2 relative"
       >
         <div className="pt-4 pb-7 px-5 flex flex-col h-full">
           <h3 className="text-2xl font-semibold">{project.title}</h3>
@@ -51,7 +52,7 @@ const ProjectCard = ({ project }: Props) => {
         <img
           src={project.imageThumbnail}
           alt="Project I worked on"
-          className="absolute hidden sm:block top-0 left-[500px] rounded-t-lg w-full h-full
+          className="absolute hidden sm:block sm:top-0 sm:left-[360px] md:left-[500px] sm:rounded-t-lg w-full h-full
             object-fill transition mt-4
             group-hover:scale-[1.04]
             group-hover:-translate-x-3
@@ -64,7 +65,7 @@ const ProjectCard = ({ project }: Props) => {
         />
 
         {/* Github and modal popup buttons */}
-        <div className="absolute top-0 right-0 w-1/2 h-full">
+        <div className="absolute top-3 right-3 sm:top-0 sm:right-0 sm:w-1/2 sm:h-full">
           <ProjectButtons project={project} />
         </div>
       </div>

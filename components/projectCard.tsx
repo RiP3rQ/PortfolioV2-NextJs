@@ -64,7 +64,7 @@ const ProjectCard = ({ project }: Props) => {
         />
 
         {/* Github and modal popup buttons */}
-        <div className="absolute top-0 right-0 w-1/2 h-full hover:bg-black/50 group">
+        <div className="absolute top-0 right-0 w-1/2 h-full">
           <ProjectButtons project={project} />
         </div>
       </div>

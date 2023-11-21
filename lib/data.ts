@@ -341,35 +341,27 @@ export const projects = [
     technologies: [
       {
         title: "Next.js",
-        image: "/images/skills/next.png",
       },
       {
         title: "React",
-        image: "/images/skills/react.png",
       },
       {
         title: "TypeScript",
-        image: "/images/skills/ts.png",
       },
       {
         title: "TailwindCSS",
-        image: "/images/skills/tailwind.png",
       },
       {
         title: "Prisma",
-        image: "/images/skills/prisma.webp",
       },
       {
         title: "MySQL",
-        image: "/images/skills/mysql.png",
       },
       {
         title: "Stripe",
-        image: "/images/skills/stripe.webp",
       },
       {
         title: "Shadcn/ui",
-        image: "/images/skills/shadcn.png",
       },
     ],
   },
@@ -384,35 +376,27 @@ export const projects = [
     technologies: [
       {
         title: "Next.js",
-        image: "/images/skills/next.png",
       },
       {
         title: "React",
-        image: "/images/skills/react.png",
       },
       {
         title: "TypeScript",
-        image: "/images/skills/ts.png",
       },
       {
         title: "TailwindCSS",
-        image: "/images/skills/tailwind.png",
       },
       {
         title: "Prisma",
-        image: "/images/skills/prisma.webp",
       },
       {
         title: "MongoDb",
-        image: "/images/skills/mongodb.png",
       },
       {
         title: "Stripe",
-        image: "/images/skills/stripe.webp",
       },
       {
         title: "Shadcn/ui",
-        image: "/images/skills/shadcn.png",
       },
     ],
   },
@@ -427,35 +411,27 @@ export const projects = [
     technologies: [
       {
         title: "Next.js",
-        image: "/images/skills/next.png",
       },
       {
         title: "React",
-        image: "/images/skills/react.png",
       },
       {
         title: "TypeScript",
-        image: "/images/skills/ts.png",
       },
       {
         title: "TailwindCSS",
-        image: "/images/skills/tailwind.png",
       },
       {
         title: "Prisma",
-        image: "/images/skills/prisma.webp",
       },
       {
         title: "MongoDb",
-        image: "/images/skills/mongodb.png",
       },
       {
         title: "ThirdWeb",
-        image: "/images/skills/thirdweb.png",
       },
       {
         title: "Shadcn/ui",
-        image: "/images/skills/shadcn.png",
       },
     ],
   },
@@ -472,35 +448,27 @@ export const projects = [
     technologies: [
       {
         title: "Next.js",
-        image: "/images/skills/next.png",
       },
       {
         title: "React",
-        image: "/images/skills/react.png",
       },
       {
         title: "JavaScript",
-        image: "/images/skills/js.png",
       },
       {
         title: "TailwindCSS",
-        image: "/images/skills/tailwind.png",
       },
       {
         title: "Prisma",
-        image: "/images/skills/prisma.webp",
       },
       {
         title: "MongoDb",
-        image: "/images/skills/mongodb.png",
       },
       {
         title: "NextAuth",
-        image: "/images/skills/nextauth.png",
       },
       {
         title: "Mapbox",
-        image: "/images/skills/mapbox.png",
       },
     ],
   },
@@ -517,23 +485,18 @@ export const projects = [
     technologies: [
       {
         title: "ReactNative",
-        image: "/images/skills/reactnative.png",
       },
       {
         title: "JavaScript",
-        image: "/images/skills/js.png",
       },
       {
         title: "TailwindCSS",
-        image: "/images/skills/tailwind.png",
       },
       {
         title: "Firebase",
-        image: "/images/skills/firebase.png",
       },
       {
         title: "Redux",
-        image: "/images/skills/redux.png",
       },
     ],
   },
@@ -549,31 +512,24 @@ export const projects = [
     technologies: [
       {
         title: "Next.js",
-        image: "/images/skills/next.png",
       },
       {
         title: "React",
-        image: "/images/skills/react.png",
       },
       {
         title: "JavaScript",
-        image: "/images/skills/js.png",
       },
       {
         title: "TailwindCSS",
-        image: "/images/skills/tailwind.png",
       },
       {
         title: "Prisma",
-        image: "/images/skills/prisma.webp",
       },
       {
         title: "MongoDb",
-        image: "/images/skills/mongodb.png",
       },
       {
         title: "Shadcn/ui",
-        image: "/images/skills/shadcn.png",
       },
     ],
   },
@@ -588,23 +544,18 @@ export const projects = [
     technologies: [
       {
         title: "Next.js",
-        image: "/images/skills/next.png",
       },
       {
         title: "React",
-        image: "/images/skills/react.png",
       },
       {
         title: "TypeScript",
-        image: "/images/skills/ts.png",
       },
       {
         title: "TailwindCSS",
-        image: "/images/skills/tailwind.png",
       },
       {
         title: "Firebase",
-        image: "/images/skills/firebase.png",
       },
     ],
   },

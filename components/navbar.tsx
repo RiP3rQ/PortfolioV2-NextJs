@@ -8,7 +8,7 @@ import { socials } from "@/lib/data";
 import Image from "next/image";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import NavigationButton from "./navigationButton";
-import MobileNavbar from "./mobile/mobileNavbar";
+import MobileNavbar from "./modals/mobileNavbar";
 
 const Navbar = () => {
   const navigate = (id: string) => () => {
@@ -72,6 +72,11 @@ const Navbar = () => {
           <NavigationButton
             text="Projekty"
             href="#projects"
+            navigate={navigate}
+          />
+          <NavigationButton
+            text="Kontakt"
+            href="#contact"
             navigate={navigate}
           />
         </motion.div>

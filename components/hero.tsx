@@ -3,6 +3,7 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import HeroBackgroundCircles from "@/components/heroBackgroundCircles";
+import { motion } from "framer-motion";
 import { heroData } from "@/lib/data";
 
 const Hero = () => {
@@ -27,21 +28,42 @@ const Hero = () => {
     <div className="h-screen flex flex-col space-y-2 items-center justify-center text-center overflow-hidden">
       <HeroBackgroundCircles />
       <div className="z-20">
-        <img
-          src={heroData.img}
-          alt="Profile Image"
-          className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        />
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "tween",
+            duration: 0.2,
+          }}
+          className="mb-4"
+        >
+          <img
+            src={heroData.img}
+            alt="Profile Image"
+            className="rounded-full h-32 w-32 mx-auto object-cover"
+          />
+        </motion.div>
 
-        <h2 className="text-sm uppercase pb-2 tracking-[10px] text-gray-500">
+        <motion.h1
+          className="text-sm uppercase pb-2 tracking-[10px] text-gray-500"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
           {heroData.role}
-        </h2>
+        </motion.h1>
         <h1 className="text-2xl md:text-4xl xl:text-6xl font-semibold px-10">
           <span className="mr-1">{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
+          <Cursor cursorColor="#8950ff" />
         </h1>
 
-        <div className="pt-5">
+        <motion.div
+          className="pt-5"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
+          }}
+        >
           <button className="heroButton" onClick={navigate("#about")}>
             O mnie
           </button>
@@ -54,7 +76,7 @@ const Hero = () => {
           <button className="heroButton" onClick={navigate("#projects")}>
             Projekty
           </button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

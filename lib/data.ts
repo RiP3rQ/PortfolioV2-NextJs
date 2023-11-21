@@ -13,9 +13,9 @@ export const socials = [
 
 export const heroData = {
   heroText: [
-    "Cześć mam na imię Rafał 'RiP3rQ' Pompa   ",
-    "Chcę zostać FullStack Developerem   ",
-    "Zapraszam do zapoznania się z moim portfolio   ",
+    "Cześć mam na imię Rafał 'RiP3rQ' Pompa ",
+    "<Chcę_zostać_FullStack_Developerem/> ",
+    "Zapraszam do zapoznania się z moim portfolio ",
   ],
   img: "/images/hero.png",
   role: "<FullStack Developer/>",

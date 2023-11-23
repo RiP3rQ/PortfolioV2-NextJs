@@ -221,7 +221,7 @@ export const paths = [
     title: "MERN",
     description:
       "Tworzenie serwisów e-commerce oraz aplikacji webowych w technologiach MERN",
-    image: "/images/stack/mern.png",
+    image: "/images/stack/mern_stack.png",
     technologies: [
       {
         image: "/images/skills/mongodb.png",

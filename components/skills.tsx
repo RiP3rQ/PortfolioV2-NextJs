@@ -11,7 +11,7 @@ const Skills = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="min-h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-[2000px] xl:px-10 
-    justify-center mx-auto items-center xl:space-y-0 mb-40 xl:mb-0"
+    justify-center mx-auto items-center xl:space-y-0 mb-96 md:mb-0"
     >
       <h3
         className="absolute top-24 uppercase tracking-[10px] text-[#8950ff] dark:text-white  

@@ -12,11 +12,11 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="min-h-screen"
+      className="min-h-screen max-w-[2000px] px-4 md:px-0 mx-auto "
     >
       <h3
         className="uppercase tracking-[10px] text-[#8950ff] dark:text-white text-5xl w-full 
-      text-center mb-10"
+      text-center mb-10 pt-24"
       >
         Projekty
       </h3>

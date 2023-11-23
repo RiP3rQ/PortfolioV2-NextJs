@@ -25,7 +25,7 @@ const ProjectCard = ({ project }: Props) => {
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group mb-3 sm:mb-8 last:mb-0 mx-4 xl:mx-0"
     >
       <div
         className="bg-gray-300 hover:bg-gray-200 max-w-4xl border border-[#8950ff] rounded-lg overflow-hidden transition
